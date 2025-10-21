@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ezgulikni Ulug‘lagan Inson — Jamiyat Faxri</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body { font-family: 'Poppins', sans-serif; background: #f3f4f6; color: #1f2937; }
+    .hero {
+      background: linear-gradient(135deg, #2563eb, #3b82f6);
+      color: #fff; text-align: center; padding: 80px 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    .hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 10px; }
+    .hero p { font-size: 1.1rem; opacity: 0.9; }
+    .section-title { border-left: 5px solid #2563eb; padding-left: 10px; font-size: 1.5rem; font-weight: 600; }
+    .card:hover { transform: scale(1.03); transition: 0.3s ease; }
+    footer { background: #111827; color: #d1d5db; text-align: center; padding: 25px; margin-top: 60px; }
+  </style>
+</head>
+<body>
+
+  <!-- Hero bo‘limi -->
+  <header class="hero">
+    <h1>Ezgulikni Ulug‘lagan Inson — Jamiyat Faxri</h1>
+    <p>Har bir ezgu amal — inson qalbining go‘zalligi va jamiyatning faxridir.</p>
+  </header>
+
+  <!-- Loyiha Maqsadi -->
+  <section class="max-w-6xl mx-auto mt-12 p-6 bg-white rounded-xl shadow-lg">
+    <h2 class="section-title mb-4">🌟 Loyiha Maqsadi</h2>
+    <p class="text-gray-700 leading-relaxed">
+      Ushbu loyiha ezgulikni ulug‘lagan insonlar, ularning fidoyiligi, saxovati va jamiyatga qo‘shgan hissasini yoritishga bag‘ishlangan.
+      Maqsad — yoshlar orasida mehr-oqibat, insonparvarlik va ijobiy fazilatlarni targ‘ib qilishdir.
+    </p>
+  </section>
+
+  <!-- Ezgu Insonlar -->
+  <section class="max-w-6xl mx-auto mt-12 p-6">
+    <h2 class="section-title mb-8">👩‍🏫 Ezgu Insonlar</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-white rounded-2xl shadow-xl p-5 text-center card">
+        <img src="https://source.unsplash.com/200x200/?teacher" alt="Inson 1" class="rounded-full mx-auto mb-4 shadow-md">
+        <h3 class="font-semibold text-lg">Saodat opa</h3>
+        <p class="text-gray-600 mt-2 text-sm">30 yildan beri o‘quvchilarga bilim va ezgulik urug‘larini sochib kelayotgan ustoz.</p>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-xl p-5 text-center card">
+        <img src="https://source.unsplash.com/200x200/?doctor" alt="Inson 2" class="rounded-full mx-auto mb-4 shadow-md">
+        <h3 class="font-semibold text-lg">Jamshid aka</h3>
+        <p class="text-gray-600 mt-2 text-sm">Kasallarga umid bag‘ishlayotgan, insonparvar va fidoyi shifokor.</p>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-xl p-5 text-center card">
+        <img src="https://source.unsplash.com/200x200/?volunteer" alt="Inson 3" class="rounded-full mx-auto mb-4 shadow-md">
+        <h3 class="font-semibold text-lg">Nodira</h3>
+        <p class="text-gray-600 mt-2 text-sm">Ko‘ngillilar jamoasining faoli, mehr-oqibat tadbirlarini tashkil etadi.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ezgulik Yangiliklari -->
+  <section class="max-w-6xl mx-auto mt-12 p-6 bg-white rounded-xl shadow-lg">
+    <h2 class="section-title mb-6">📰 Ezgulik Yangiliklari</h2>
+    <div class="space-y-6">
+      <article class="bg-blue-50 border-l-4 border-blue-600 p-5 rounded-lg">
+        <h3 class="font-semibold text-xl">“Bir Ezgu Amal” aksiyasi boshlandi</h3>
+        <p class="text-gray-700 mt-2">Tuman maktablarida o‘quvchilar tomonidan keksalarga yordam aksiyasi boshlandi. 100 dan ortiq yoshlar qatnashdi.</p>
+      </article>
+
+      <article class="bg-blue-50 border-l-4 border-blue-600 p-5 rounded-lg">
+        <h3 class="font-semibold text-xl">500 oila ezgulik haftaligida quvonch topdi</h3>
+        <p class="text-gray-700 mt-2">Ko‘ngillilar tomonidan muhtoj oilalarga oziq-ovqat, kiyim-kechak va dori-darmon tarqatildi.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Bog‘lanish formasi -->
+  <section class="max-w-lg mx-auto mt-12 p-6 bg-white rounded-xl shadow-lg">
+    <h2 class="section-title mb-4">📬 Biz bilan bog‘laning</h2>
+    <form id="contactForm">
+      <label class="block mb-2 font-medium">Ismingiz:</label>
+      <input type="text" id="name" class="w-full border border-gray-300 rounded p-2 mb-4" placeholder="Ismingizni kiriting">
+
+      <label class="block mb-2 font-medium">Xabar:</label>
+      <textarea id="message" class="w-full border border-gray-300 rounded p-2 mb-4" placeholder="Xabaringizni yozing"></textarea>
+
+      <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700">Yuborish</button>
+      <p id="responseMsg" class="text-green-600 mt-3 hidden">✅ Xabaringiz muvaffaqiyatli yuborildi!</p>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Ezgulik Loyiha — Jamiyat Faxri. Barcha huquqlar himoyalangan.</p>
+  </footer>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const msg = document.getElementById('message').value.trim();
+      const resp = document.getElementById('responseMsg');
+
+      if (name && msg) {
+        resp.classList.remove('hidden');
+        this.reset();
+      } else {
+        alert('⚠️ Iltimos, barcha maydonlarni to‘ldiring!');
+      }
+    });
+  </script>
+</body>
+</html>
